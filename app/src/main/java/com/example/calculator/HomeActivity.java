@@ -14,7 +14,7 @@ public class HomeActivity extends AppCompatActivity {
     EditText num1,num2;
     Button add,subtract,multiply,divide;
     float res;
-    int number1,number2;
+    float number1,number2;
 
 
     @Override
@@ -70,8 +70,8 @@ public class HomeActivity extends AppCompatActivity {
         divide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                number1 = Integer.parseInt(num1.getText().toString());
-                number2 = Integer.parseInt(num2.getText().toString());
+                number1 = Float.parseFloat(num1.getText().toString());
+                number2 = Float.parseFloat(num2.getText().toString());
                 res= number1/ number2;
                 result.setText(String.valueOf(res));
 
